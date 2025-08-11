@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 20%;
+    position: relative;
+    left: 75%;
+}
+
+header {
+    background-image: url(../imagenes/logo1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+body{
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 300;
+    font-size: x-large;
+}
+
+.cuerpo {
+    background-color: rgb(220, 177, 245);
+}
+
+.lista {
+    list-style-type: none;
+    text-align: center;
+}
+
+.lista li {
+    display: inline;
+    margin-right: 3%;
+}
+
+.lista li a {
+    color: rgb(108, 1, 129);
+    font-size: xx-large;
+}
+
+.marca {
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(108, 1, 129);
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+form {
+    text-align: start;
+    text-transform: capitalize;
+}
+
+.c1 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
