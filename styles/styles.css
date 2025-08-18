@@ -18,7 +18,7 @@ header {
     background-position: center;
 }
 
-body{
+body {
     font-family: "Jacquard 24", system-ui;
     font-weight: 300;
     font-size: x-large;
@@ -68,4 +68,19 @@ form {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.videos {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 100px; 
+    margin-top: 50px; 
+    margin-bottom: 50px;
+}
+
+.videos iframe {
+    width: 45%;
+    height: 300px;
+    border-radius: 10px;
 }
