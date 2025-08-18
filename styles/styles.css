@@ -66,31 +66,27 @@ form {
 
 .c1 {
     width: 100%;
-    object-fit: cover;              
+    object-fit: cover;
 }
-.titulo{
+
+.titulo {
     margin-right: 5px;
     margin-left: 5px;
 }
 
-h1{
+h1 {
     text-align: center;
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
-h3{
+h3 {
     text-align: center;
 }
-.lista{
-    list-style: none;
-    display: flex;
-    justify-content: center; /* ¡Centra los ítems! */
-    gap: 1.5rem;
-}
-p{
+
+p {
     text-align: center;
 }
 
@@ -124,6 +120,7 @@ p{
     height: 400px;
     border-radius: 10px;
 }
+
 /* css para que use para cambiar ubicacion y tamaño de imagenes */
 .zapas {
     display: flex;
@@ -145,7 +142,6 @@ p{
     max-width: 300px;
     height: auto;
     border-radius: 8px;
-
 }
 
 .remeras img {
