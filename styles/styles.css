@@ -149,3 +149,67 @@ p {
     height: auto;
     border-radius: 8px;
 }
+
+/* cambios en hmtl contacto*/
+
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "redes-titulo imagen-logo"
+        "redes-parrafo imagen-logo";
+    gap: 20px;
+    align-items: center;
+}
+
+.contact-info-grid h2 {
+    grid-area: redes-titulo;
+}
+
+.contact-info-grid p {
+    grid-area: redes-parrafo;
+}
+
+.contact-info-grid .c1 {
+    grid-area: imagen-logo;
+    max-width: 100%;
+    height: auto;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "form-titulo formulario";
+    gap: 20px;
+    align-items: center;
+}
+
+.form-grid h3 {
+    grid-area: form-titulo;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.form-grid #contacto {
+    grid-area: formulario;
+}
+
+@media (max-width: 768px) {
+
+    .contact-info-grid,
+    .form-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "redes-titulo"
+            "redes-parrafo"
+            "imagen-logo"
+            "form-titulo"
+            "formulario";
+    }
+
+    .form-grid h3 {
+        text-align: center;
+        padding-right: 0;
+    }
+}
