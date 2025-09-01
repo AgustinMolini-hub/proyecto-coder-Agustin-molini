@@ -6,11 +6,7 @@
     padding: 0;
 }
 
-.logo {
-    width: 20%;
-    position: relative;
-    left: 75%;
-}
+/* header y footer */
 
 header {
     background-image: url(../imagenes/logo1.jpg);
@@ -18,21 +14,7 @@ header {
     background-position: center;
 }
 
-body {
-    font-family: "Jacquard 24", system-ui;
-    font-weight: 300;
-    font-size: x-large;
-}
-
-.cuerpo {
-    background-color: rgb(220, 177, 245);
-}
-
-.lista {
-    list-style-type: none;
-    text-align: center;
-}
-
+/* Orden y color de el nav */
 .lista li {
     display: inline;
     margin-right: 3%;
@@ -41,6 +23,21 @@ body {
 .lista li a {
     color: rgb(108, 1, 129);
     font-size: xx-large;
+}
+
+/*                       */
+
+body {
+    background-color: rgb(220, 177, 245);
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 300;
+    font-size: x-large;
+}
+
+.logo {
+    width: 20%;
+    position: relative;
+    left: 75%;
 }
 
 .marca {
@@ -53,27 +50,15 @@ footer {
     text-align: center;
 }
 
-.container {
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+/* Lista de nº telefono */
+.lista {
+    list-style-type: none;
+    text-align: center;
 }
 
-form {
-    text-align: start;
-    text-transform: capitalize;
-}
+/*                      */
 
-.c1 {
-    width: 100%;
-    object-fit: cover;
-}
-
-.titulo {
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
+/* Main de pagina contacto */
 h1 {
     text-align: center;
 }
@@ -82,13 +67,11 @@ h2 {
     text-align: center;
 }
 
-h3 {
-    text-align: center;
-}
-
 p {
     text-align: center;
 }
+
+/*                        */
 
 /* css para que use para cambiar la ubicacion de los videos en index */
 .videos {
@@ -139,13 +122,13 @@ p {
 }
 
 .zapas img {
-    max-width: 300px;
+    max-width: 250px;
     height: auto;
     border-radius: 8px;
 }
 
 .remeras img {
-    max-width: 300px;
+    max-width: 250px;
     height: auto;
     border-radius: 8px;
 }
@@ -195,40 +178,59 @@ p {
     grid-area: formulario;
 }
 
-@media (max-width: 768px) {
 
-    .contact-info-grid,
-    .form-grid {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "redes-titulo"
-            "redes-parrafo"
-            "imagen-logo"
-            "form-titulo"
-            "formulario";
+/* SACAR PARA HACER MEDIAQ*/
+
+/*                         */
+
+
+/*
+* MEDIA QUERIES
+* Cambios de diseño para tabletas (desde 640px) y orden de elementos.
+*/
+@media (min-width: 640px) {
+    body {
+        font-size: 1.125rem;
     }
 
-    .form-grid h3 {
-        text-align: center;
-        padding-right: 0;
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 20%;
+        max-width: 200px;
+        order: 2;
+        margin-bottom: 0;
+    }
+
+    nav {
+        order: 1;
+    }
+
+    .lista {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .lista a {
+        font-size: 2rem;
+    }
+
+    .marca {
+        font-size: 3rem;
     }
 }
 
-header {
-    background-color: rgb(220, 177, 245);
-    color: white;
-    padding: 0;
+/* Cambios de diseño para computadoras de escritorio (desde 768px) */
+@media (min-width: 768px) {
+    .videos {
+        flex-direction: row;
+        gap: 1rem;
+    }
 
-}
-
-footer {
-    background-color: rgb(108, 1, 129);
-    padding: 0;
-    text-align: center;
-
-}
-
-.container {
-    max-width: 110%;
-    margin: 0;
+    .videos div {
+        width: 8%;
+    }
 }
