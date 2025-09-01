@@ -178,17 +178,9 @@ p {
     grid-area: formulario;
 }
 
+/* */
 
-/* SACAR PARA HACER MEDIAQ*/
-
-/*                         */
-
-
-/*
-* MEDIA QUERIES
-* Cambios de diseño para tabletas (desde 640px) y orden de elementos.
-*/
-@media (min-width: 640px) {
+@media (min-width: 430px) and (max-width: 840px) {
     body {
         font-size: 1.125rem;
     }
@@ -223,14 +215,3 @@ p {
     }
 }
 
-/* Cambios de diseño para computadoras de escritorio (desde 768px) */
-@media (min-width: 768px) {
-    .videos {
-        flex-direction: row;
-        gap: 1rem;
-    }
-
-    .videos div {
-        width: 8%;
-    }
-}
