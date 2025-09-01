@@ -11,6 +11,11 @@
   animation: blink 0.5s linear infinite;
 }
 
+h1, h2, h3,
+h1 + p, h2 + p, h3 + p {
+  text-align: center;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -51,6 +56,7 @@ body {
   font-family: "Jacquard 24", system-ui;
   font-weight: 300;
   font-size: x-large;
+  overflow-x: hidden;
 }
 
 footer {
